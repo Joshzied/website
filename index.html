@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .main {
+            flex: 2;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media(max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    Hello this is josh born 
-    <img src="html.png" alt="">
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <section class="main">
+                <h2>Main Content</h2>
+                <p>This is where your main content will go. You can write about your services, products, or anything that interests your audience.</p>
+            </section>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>This is a sidebar where you can add links, recent posts, or any additional information.</p>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
